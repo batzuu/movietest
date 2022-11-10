@@ -1,6 +1,6 @@
 import axios from "axios";
 const BASE_URL = "http://localhost:3500";
-const OMDB_API = "http://www.omdbapi.com";
+const OMDB_API = "https://www.omdbapi.com";
 const OMDB_API_KEY = "a6c35cd0";
 
 export default axios.create({

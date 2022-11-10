@@ -1,19 +1,18 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const userSchema = new Schema({
+const playlistSchema = new Schema({
+	playlistname: {
+		type: String,
+		required: true,
+	},
 	username: {
 		type: String,
 		required: true,
 	},
-	password: {
-		type: String,
-		required: true,
-	},
-	playlists: {
+	movies: {
 		type: [String]
 	},
-	refreshToken: String,
 });
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("Playlist", playlistSchema);

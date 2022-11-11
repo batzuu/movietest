@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faRightFromBracket, fas } from "@fortawesome/free-solid-svg-icons";
 import { faTwitter, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
+import icn from "./Fasal-logos_white_short.png";
 
 library.add(fas, faTwitter, faFontAwesome);
 
@@ -26,10 +27,7 @@ const Header = ({ setSearchResults }) => {
 			<div className="header">
 				<div className="headerLeft">
 					<Link to="/">
-						<img
-							className="header__icon"
-							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png"
-						/>
+						<img className="header__icon" src={icn} alt="logo" />
 					</Link>
 					<Link
 						to="/movies/upcoming"
@@ -54,10 +52,7 @@ const Header = ({ setSearchResults }) => {
 			<div className="header">
 				<div className="headerLeft">
 					<Link to="/">
-						<img
-							className="header__icon"
-							src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/IMDB_Logo_2016.svg/2560px-IMDB_Logo_2016.svg.png"
-						/>
+						<img className="header__icon" src={icn} />
 					</Link>
 				</div>
 				<div className="headerRight">

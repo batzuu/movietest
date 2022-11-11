@@ -4,8 +4,7 @@ const OMDB_API = "https://www.omdbapi.com";
 const OMDB_API_KEY = "a6c35cd0";
 
 if (process.env.AB === "prod") {
-	BASE_URL =
-		"https://70a3-2405-201-4014-da9c-34ba-e5d8-88d2-ad35.in.ngrok.io/";
+	BASE_URL = "https://e127-103-69-39-55.in.ngrok.io/";
 }
 export default axios.create({
 	baseURL: BASE_URL,

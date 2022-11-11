@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getOneMovie } from "../../api/axios";
+import { getMovies, getOneMovie } from "../../api/axios";
 import useAxiosPrivate from "../../hooks/useAxiosPrivate";
 import Cards from "../card/card";
 
